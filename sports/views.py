@@ -26,7 +26,6 @@ class SportViewSet(ModelViewSet):
         print("CACHE HIT → REDIS")         # CACHE WORKING
         return Response(data)
 
-
 class CoachViewSet(ModelViewSet):
     queryset = Coach.objects.all()
     serializer_class = CoachSerializer
